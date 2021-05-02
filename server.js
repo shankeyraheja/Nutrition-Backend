@@ -58,6 +58,6 @@ app.post("/list", async (req,res) => {
   res.json(list)
 })
 
-app.listen(3001, () => {
+app.listen(process.env.PORT, () => {
   console.log("app is running on port 3001")
 })
